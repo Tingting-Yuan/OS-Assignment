@@ -1,1 +1,33 @@
+name: Autograde
 
+on:
+  push:
+    branches:
+      - '**'   # run on all branches (students push to their own branch)
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10   # optional safety limit
+
+    steps:
+      - name: Checkout student branch
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential gcc make
+
+      - name: Compile pthreads_example
+        run: |
+          gcc -Wall -pthread posix/pthreads_example.c -o pthreads_example
+          gcc -Wall test_pthreads_example.c -o test_pthreads_example
+
+      - name: Run C tests
+        run: |
+          echo "Running tests on branch: ${{ github.ref_name }}"
+          ./test_assignment2.c
