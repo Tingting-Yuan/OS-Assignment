@@ -4,11 +4,11 @@
 In this repository you will find examples of C code and some exercises for the course 'Operating Systems' in
 the 3rd Semester of the Informatics study programme.
 
-## Basic Linux
+## Task1: Basic Linux
 
 The folder `linux` containts a short guide about Linux usage with the command line. The guide can be found [here](linux/linux_basics.md)
 
-## C programming examples
+## Task2: C programming examples
 
 The folder `basics` containts simple C examples that demostrate some basic C concepts.
 
@@ -30,4 +30,4 @@ The folder ``posix`` contains examples of usage of POSIX system calls:
 - ``semaphore_example.c``: demonstrates how to use a semaphore. 
 - ``Makefile``: file used to build the examples in this folder.
 
-The exercises can be found [here](exercises/exercises.md).
+The two assignments can be found [here](exercises/exercises.md).
