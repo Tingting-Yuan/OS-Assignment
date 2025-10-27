@@ -30,4 +30,4 @@ The folder ``posix`` contains examples of usage of POSIX system calls:
 - ``semaphore_example.c``: demonstrates how to use a semaphore. 
 - ``Makefile``: file used to build the examples in this folder.
 
-The two assignments can be found [here](exercises/exercises.md).
+The two assignments can be found [here](assignment.md).
