@@ -6,6 +6,7 @@
    note: “Pass by reference” means passing the address of a variable instead of directly switching its value.
 
 2. Modify the program ``posix/pthreads_example.c`` to accept the number of threads to create as a command line parameter.
+   
    note: Creating threads with pthread_create may fail. 
    This is usually due to system resource limits (too many threads or insufficient memory) or invalid parameters. Always check the return value to handle errors safely.
    Some test example:
