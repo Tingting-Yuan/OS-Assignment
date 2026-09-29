@@ -2,7 +2,7 @@
 
 1. **Swap Two Integers by Reference**
 
-   Write a C program that swaps the two integer values passed as parameters.  
+   Write a C program that swaps the two integer values passed as parameters (int_swap.c).  
    **Hint:** Both parameters have to be passed by reference.
 
    **Note:**  
